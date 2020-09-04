@@ -1,0 +1,43 @@
+$width: 20vh;
+$height:20vh;
+$font-size: 8vh;
+
+
+#slotsFrame{
+    display: flex;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 99999px;
+}
+
+.s_container{    
+    display: flex;
+    position: relative;
+    margin-right: $width;
+}
+
+.s_container:nth-child(5){
+    margin-right: 0px;
+}
+
+.gift{
+    display: flex;
+    position: absolute;
+    width: $width;
+    height: $height;
+    border: 0.5px solid black;
+    background: white;
+    font-size: $font-size;
+}
+
+/*click me*/
+.click{
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+}
+
+#click{
+    font-size: $font-size;
+    line-height: $font-size;
+}
